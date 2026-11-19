@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nick Mugo — Software Engineer</title>
+  <meta name="description" content="Nick Mugo Njuru is a Nairobi-based software engineer building enterprise backend systems and applied machine learning — Safaricom, Kenya Airways, Strathmore University." />
+  <meta name="theme-color" content="#0b0b0c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nick Mugo — Software Engineer" />
+  <meta property="og:description" content="Enterprise backend systems and applied machine learning, built in Nairobi." />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nick Mugo Njuru",
+    "jobTitle": "Software Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE" },
+    "alumniOf": ["Strathmore University", "Moringa School"],
+    "sameAs": ["https://github.com/NICKMUGO", "https://www.linkedin.com/in/nick-mugo-685154302/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" aria-label="Nick Mugo, home">
+      <span class="mark">NM</span>
+      <span class="nav__name">Nick Mugo</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__meta">
+      <span class="clock mono"><span class="dot"></span>Nairobi <time id="clock">--:--</time></span>
+      <a href="#contact" class="btn btn--sm magnetic">Let's talk</a>
+    </div>
+    <button class="nav__toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--a"></div>
+        <div class="orb orb--b"></div>
+        <div class="gridlines"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__top reveal">
+          <span class="pill"><span class="pulse"></span>Open to graduate &amp; engineering roles</span>
+          <span class="mono muted">Software Engineer — Nairobi, KE</span>
+        </div>
+
+        <h1 class="hero__title" aria-label="Nick Mugo">
+          <span class="line"><span class="word">Nick</span></span>
+          <span class="line line--indent"><span class="word"><em>Mugo</em></span><span class="hero__portrait" aria-hidden="true">
+            <img src="assets/profile.jpg" alt="" onerror="this.remove()" />
+            <span class="monogram">NM</span>
+          </span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <p class="hero__lede reveal">
+            I build backend systems that <em>keep running</em> at enterprise scale, and machine learning that
+            pays off for the business. Recently: billing infrastructure at <strong>Safaricom</strong> and an
+            AI-driven SIM platform for <strong>Kenya&nbsp;Airways</strong>.
+          </p>
+          <div class="hero__cta reveal">
+            <a href="#work" class="btn btn--primary magnetic">View selected work <span class="arrow">↘</span></a>
+            <a href="https://www.linkedin.com/in/nick-mugo-685154302/" target="_blank" rel="noopener" class="btn btn--ghost magnetic">LinkedIn <span class="arrow">↗</span></a>
+            <a href="https://github.com/NICKMUGO" target="_blank" rel="noopener" class="btn btn--ghost magnetic">GitHub <span class="arrow">↗</span></a>
+          </div>
+        </div>
+
+        <dl class="stats reveal">
+          <div class="stat"><dt>Subscribers served by systems I worked on</dt><dd><span data-count="1" data-suffix="M+">0</span></dd></div>
+          <div class="stat"><dt>Call records modelled for anomaly detection</dt><dd><span data-count="45467">0</span></dd></div>
+          <div class="stat"><dt>Diseases ranked by my ensemble classifier</dt><dd><span data-count="41" data-suffix="+">0</span></dd></div>
+          <div class="stat"><dt>Enterprise engagements in 2026</dt><dd><span data-count="2">0</span></dd></div>
+        </dl>
+      </div>
+
+      <a href="#work" class="scroll-cue mono" aria-label="Scroll to work">
+        <span>Scroll</span><span class="scroll-cue__bar"></span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-label="Technologies">
+      <div class="marquee__track">
+        <span>Java Spring Boot</span><i>✦</i><span>Python</span><i>✦</i><span>FastAPI</span><i>✦</i><span>Next.js</span><i>✦</i>
+        <span>ASP.NET Core 8</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>scikit-learn</span><i>✦</i><span>XGBoost</span><i>✦</i>
+        <span>Prophet</span><i>✦</i><span>Unity &amp; C#</span><i>✦</i><span>React</span><i>✦</i><span>CCNA Networking</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow mono">01 — Selected work</span>
+          <h2 class="section__title">Systems with real users,<br /><em>real data,</em> real stakes.</h2>
+        </header>
+
+        <div class="bento">
+          <!-- TeleSpy -->
+          <article class="card card--a reveal spot">
+            <div class="card__visual viz-forecast" aria-hidden="true">
+              <svg viewBox="0 0 400 200" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="gf" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0" stop-color="var(--accent)" stop-opacity=".35" />
+                    <stop offset="1" stop-color="var(--accent)" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <g class="gl"><line x1="0" y1="50" x2="400" y2="50"/><line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="150" x2="400" y2="150"/></g>
+                <path class="band" d="M240 92 C 270 80, 300 100, 330 84 S 380 70, 400 76 L400 128 C 380 122, 350 136, 330 128 S 270 142, 240 124 Z" />
+                <path class="area" d="M0 140 C 30 130, 50 150, 80 128 S 130 110, 160 122 S 210 96, 240 108 L240 200 L0 200 Z" fill="url(#gf)" />
+                <path class="line-actual" d="M0 140 C 30 130, 50 150, 80 128 S 130 110, 160 122 S 210 96, 240 108" />
+                <path class="line-fc" d="M240 108 C 270 96, 300 118, 330 104 S 380 92, 400 100" />
+                <circle class="anomaly" cx="128" cy="46" r="5" />
+                <circle class="anomaly-ring" cx="128" cy="46" r="5" />
+              </svg>
+              <span class="viz-label mono">isolation_forest · score −0.71</span>
+            </div>
+            <div class="card__body">
+              <div class="card__meta mono"><span>Kenya Airways × Strathmore</span><span>2026</span></div>
+              <h3 class="card__title">TeleSpy</h3>
+              <p class="card__sub">AI-driven SIM management platform</p>
+              <p>A platform that links every call record to an employee, SIM card and cost centre, covering the full SIM lifecycle and cost attribution for teams from Aviation through to Customer Service.</p>
+              <ul class="ticks">
+                <li><b>Isolation Forest</b> anomaly detection, <b>Prophet</b> cost forecasting and <b>K-Means</b> usage profiling</li>
+                <li>Trained on a pseudonymised extract of <b>45,467</b> call records</li>
+                <li>Served through a Python/FastAPI analytics service</li>
+              </ul>
+              <div class="tags"><span>Python</span><span>FastAPI</span><span>Next.js</span><span>ASP.NET Core 8</span><span>PostgreSQL</span></div>
+            </div>
+          </article>
+
+          <!-- ML Diagnosis -->
+          <article class="card card--b reveal spot">
+            <div class="card__visual viz-bars" aria-hidden="true">
+              <div class="bars">
+                <div class="bar" style="--v:.82"><span class="mono">Dx 1</span><i></i><b class="mono">0.82</b></div>
+                <div class="bar" style="--v:.61"><span class="mono">Dx 2</span><i></i><b class="mono">0.61</b></div>
+                <div class="bar" style="--v:.38"><span class="mono">Dx 3</span><i></i><b class="mono">0.38</b></div>
+                <div class="bar" style="--v:.17"><span class="mono">Dx 4</span><i></i><b class="mono">0.17</b></div>
+              </div>
+              <span class="viz-label mono">soft_vote(LR, RF, XGB) → top-k</span>
+            </div>
+            <div class="card__body">
+              <div class="card__meta mono"><span>Machine learning · Bioinformatics</span><span>2025–26</span></div>
+              <h3 class="card__title">Adaptive ML Diagnosis</h3>
+              <p class="card__sub">&amp; Allergen Cross-Reactivity System</p>
+              <ul class="ticks">
+                <li>Soft-voting ensemble mapping <b>132</b> symptoms to a ranked differential across <b>41+</b> diseases. Evaluated with top-3 accuracy, macro-F1 and stratified 5-fold CV</li>
+                <li>Learns from patient outcomes: an online SGDClassifier updates via <code>partial_fit</code></li>
+                <li>Bioinformatics pipeline over ~1,000 UniProt allergens and 2,748 COMPARE 2024 FASTA sequences</li>
+              </ul>
+              <div class="tags"><span>scikit-learn</span><span>XGBoost</span><span>Streamlit</span><span>SQLite</span><span>UniProt API</span></div>
+              <a class="card__link" href="https://github.com/NICKMUGO/MachineLearning_AdaptiveDiagnosis_Project" target="_blank" rel="noopener">View on GitHub <span class="arrow">↗</span></a>
+            </div>
+          </article>
+
+          <!-- Arcane Honor -->
+          <article class="card card--c reveal spot">
+            <div class="card__visual viz-cube" aria-hidden="true">
+              <div class="scene">
+                <div class="cube">
+                  <span class="f f1"></span><span class="f f2"></span><span class="f f3"></span>
+                  <span class="f f4"></span><span class="f f5"></span><span class="f f6"></span>
+                </div>
+              </div>
+              <span class="viz-label mono">QS ImpACT · Finalist</span>
+            </div>
+            <div class="card__body">
+              <div class="card__meta mono"><span>Scrum Master &amp; Lead Developer</span><span>2024</span></div>
+              <h3 class="card__title">Arcane Honor</h3>
+              <p class="card__sub">3D game for the UN Sustainable Development Goals</p>
+              <p>Led Team Misfits254 to finalist selection before 50+ international judges, representing Kenya. Presented to Microsoft and Halo.</p>
+              <div class="tags"><span>Unity</span><span>C#</span><span>3D</span><span>Scrum</span></div>
+              <a class="card__link" href="https://nickmugo.itch.io/misfitskenya" target="_blank" rel="noopener">Play on itch.io <span class="arrow">↗</span></a>
+            </div>
+          </article>
+
+          <!-- Autofind -->
+          <article class="card card--d reveal spot">
+            <div class="card__visual viz-net" aria-hidden="true">
+              <svg viewBox="0 0 400 200">
+                <g class="links">
+                  <path d="M200 100 L80 50" /><path d="M200 100 L80 150" /><path d="M200 100 L320 40" />
+                  <path d="M200 100 L330 110" /><path d="M200 100 L300 170" /><path d="M80 50 L40 110" />
+                </g>
+                <g class="packets">
+                  <circle r="3"><animateMotion dur="2.4s" repeatCount="indefinite" path="M200 100 L80 50" /></circle>
+                  <circle r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M200 100 L320 40" /></circle>
+                  <circle r="3"><animateMotion dur="2.7s" repeatCount="indefinite" path="M200 100 L300 170" /></circle>
+                  <circle r="3"><animateMotion dur="3.3s" repeatCount="indefinite" path="M200 100 L330 110" /></circle>
+                </g>
+                <g class="nodes">
+                  <circle cx="80" cy="50" r="7"/><circle cx="80" cy="150" r="7"/><circle cx="320" cy="40" r="7"/>
+                  <circle cx="330" cy="110" r="7"/><circle cx="300" cy="170" r="7"/><circle cx="40" cy="110" r="5"/>
+                  <circle class="hub" cx="200" cy="100" r="13"/>
+                </g>
+              </svg>
+              <span class="viz-label mono">provision → router ✓</span>
+            </div>
+            <div class="card__body">
+              <div class="card__meta mono"><span>Safaricom PLC</span><span>2026</span></div>
+              <h3 class="card__title">Autofind</h3>
+              <p class="card__sub">Enterprise Wi-Fi &amp; router provisioning</p>
+              <p>Modernised legacy provisioning code for Safaricom's platform that provisions Wi-Fi routers to enterprise clients, making it easier to maintain and safer to change.</p>
+              <div class="tags"><span>Java</span><span>Spring Boot</span><span>Legacy modernisation</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="archive">
+          <header class="archive__head reveal">
+            <h3 class="archive__title">More projects</h3>
+            <a class="mono archive__all" href="https://github.com/NICKMUGO?tab=repositories" target="_blank" rel="noopener">All repositories ↗</a>
+          </header>
+          <ul class="archive__list">
+            <li class="reveal"><a href="https://github.com/NICKMUGO/DietaryBioactivesAndAllergy" target="_blank" rel="noopener">
+              <span class="archive__year mono">2026</span>
+              <span class="archive__name">Dietary Bioactives &amp; the Allergy Transcriptome<small>Meta-analysis of 291 samples across 7 contrasts. Found a 1,177-gene allergy signature, then tested 44 dietary bioactives against it with bias-corrected enrichment, reversal scoring and ML. Includes a Streamlit results explorer.</small></span>
+              <span class="archive__stack mono">Python · GEO · CTD · Reactome · Streamlit</span>
+              <span class="archive__go" aria-hidden="true">↗</span></a></li>
+            <li class="reveal"><a href="https://github.com/NICKMUGO/Real-Estate-App" target="_blank" rel="noopener">
+              <span class="archive__year mono">2024</span>
+              <span class="archive__name">Makao Marketplace<small>Property listing and rental platform for Kenya's informal rental market. Landlords post, tenants search, filter and enquire. Scrum Master &amp; full-stack developer.</small></span>
+              <span class="archive__stack mono">React · Flask · SQLite</span>
+              <span class="archive__go" aria-hidden="true">↗</span></a></li>
+            <li class="reveal"><a href="https://github.com/Njmwas-Moringa-Class/social-media-application-social-media-app" target="_blank" rel="noopener">
+              <span class="archive__year mono">2024</span>
+              <span class="archive__name">MamboCorner<small>Kenyan social media platform with profiles, posting, following and real-time interaction. Led sprint planning, code reviews and delivery as Scrum Master.</small></span>
+              <span class="archive__stack mono">React · Flask · SQLAlchemy</span>
+              <span class="archive__go" aria-hidden="true">↗</span></a></li>
+            <li class="reveal"><a href="https://hospital-mgmt-system.vercel.app" target="_blank" rel="noopener">
+              <span class="archive__year mono">2024</span>
+              <span class="archive__name">Hospital Appointment System<small>Appointment scheduling, doctor availability and patient records, built with a collaborative team. Live demo.</small></span>
+              <span class="archive__stack mono">React · Tailwind · Flask</span>
+              <span class="archive__go" aria-hidden="true">↗</span></a></li>
+            <li class="reveal"><a href="https://github.com/NICKMUGO/Duka" target="_blank" rel="noopener">
+              <span class="archive__year mono">2025</span>
+              <span class="archive__name">Duka<small>Native Android app written in Kotlin.</small></span>
+              <span class="archive__stack mono">Kotlin · Android · Gradle</span>
+              <span class="archive__go" aria-hidden="true">↗</span></a></li>
+            <li class="reveal"><a href="https://github.com/NICKMUGO/Operating-System-Strath" target="_blank" rel="noopener">
+              <span class="archive__year mono">2024</span>
+              <span class="archive__name">Stratizens<small>Unity project with separate 2D and 3D builds and custom HLSL shaders.</small></span>
+              <span class="archive__stack mono">Unity · C# · HLSL</span>
+              <span class="archive__go" aria-hidden="true">↗</span></a></li>
+            <li class="reveal"><a href="https://github.com/NICKMUGO/TBCA-app" target="_blank" rel="noopener">
+              <span class="archive__year mono">2024</span>
+              <span class="archive__name">TBCA App<small>Web app for the TBCA investment group.</small></span>
+              <span class="archive__stack mono">HTML · CSS · JavaScript</span>
+              <span class="archive__go" aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow mono">02 — Experience</span>
+          <h2 class="section__title">Where I've <em>shipped</em>.</h2>
+        </header>
+
+        <ol class="xp">
+          <li class="xp__item reveal">
+            <details open>
+              <summary>
+                <span class="xp__date mono">May — Oct 2026</span>
+                <span class="xp__role">
+                  <span class="xp__co">Kenya Airways</span>
+                  <span class="xp__title">Software Engineer Attaché · Strathmore Student Fellowship</span>
+                </span>
+                <span class="xp__plus" aria-hidden="true"></span>
+              </summary>
+              <div class="xp__body">
+                <ul class="ticks">
+                  <li>Selected for the Kenya Airways–Strathmore Student Fellowship, working on real airline projects as part of an industry-driven final-year capstone programme</li>
+                  <li>Worked on a SIM Management Platform supporting teams from Aviation through to Customer Service</li>
+                  <li>Built the platform's cost charging capability, applying machine learning models for cost forecasting and anomaly detection</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+
+          <li class="xp__item reveal">
+            <details>
+              <summary>
+                <span class="xp__date mono">Jan — Apr 2026</span>
+                <span class="xp__role">
+                  <span class="xp__co">Safaricom PLC</span>
+                  <span class="xp__title">Software Engineering Intern · Core Billing &amp; Business Support Systems</span>
+                </span>
+                <span class="xp__plus" aria-hidden="true"></span>
+              </summary>
+              <div class="xp__body">
+                <ul class="ticks">
+                  <li>Built and maintained Java Spring Boot backend services within Safaricom's enterprise billing infrastructure, serving millions of subscribers</li>
+                  <li>Modernised legacy billing code into scalable, maintainable architectures, improving reliability and performance</li>
+                  <li>Integrated APIs across enterprise workflows, so cross-functional teams could collaborate and deliver faster</li>
+                  <li>Monitored live production billing systems 24/7 to keep enterprise infrastructure up and reliable</li>
+                  <li>Investigated fraudulent till-number transactions linked to Bonga Points redemption by querying production records</li>
+                  <li>Supported incident and change management: diagnosing production issues, escalating critical failures and deploying safely without disrupting live operations</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+
+          <li class="xp__item reveal">
+            <details>
+              <summary>
+                <span class="xp__date mono">Jan — Feb 2025</span>
+                <span class="xp__role">
+                  <span class="xp__co">Loresho Primary School</span>
+                  <span class="xp__title">Volunteer Educator · Pre-Technical Studies</span>
+                </span>
+                <span class="xp__plus" aria-hidden="true"></span>
+              </summary>
+              <div class="xp__body">
+                <ul class="ticks">
+                  <li>Taught internet safety, cybersecurity and networking to 30+ primary students through hands-on lab sessions</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+
+          <li class="xp__item reveal">
+            <details>
+              <summary>
+                <span class="xp__date mono">Oct 2024 — Jun 2025</span>
+                <span class="xp__role">
+                  <span class="xp__co">TBCA Investment Group</span>
+                  <span class="xp__title">Member &amp; Treasurer · Part-time</span>
+                </span>
+                <span class="xp__plus" aria-hidden="true"></span>
+              </summary>
+              <div class="xp__body">
+                <ul class="ticks">
+                  <li>Member of a 15-person investment group founded by Strathmore alumni, investing in stocks, bonds, real estate and startups</li>
+                  <li>As Treasurer, managed group expenditures, financial records and member loan issuance</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__intro reveal">
+          <span class="eyebrow mono">03 — About</span>
+          <h2 class="section__title">Engineer by training,<br /><em>operator</em> by habit.</h2>
+          <p class="lead">I'm a final-year Computer Science student at Strathmore University, specialising in Software Engineering. I like the unglamorous parts of software: production monitoring, incident response, legacy code that has to keep working while you rewrite it.</p>
+          <p class="lead muted">I've been Scrum Master on four shipped team products. Outside the enterprise stack, I build ML systems that learn from feedback. I've also led a game team to an international final and taught networking to kids in a school computer lab.</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="panel reveal">
+            <h3 class="panel__title mono">Education</h3>
+            <ul class="edu">
+              <li><div><b>Strathmore University</b><span>BSc Computer Science, Software Engineering</span></div><em class="mono">2027</em></li>
+              <li><div><b>Moringa School</b><span>Software Engineering Certificate, Full-Stack Web Development</span></div><em class="mono">2024</em></li>
+              <li><div><b>QS ImpACT Skills Challenge</b><span>With the United Nations; 3D game development training by US faculty</span></div><em class="mono">2024</em></li>
+              <li><div><b>Rosslyn Academy</b><span>U.S. SAT 1430/1600 (Math 760)</span></div><em class="mono">2023</em></li>
+              <li><div><b>Strathmore School</b><span>KCSE, Mean Grade B+</span></div><em class="mono">KCSE</em></li>
+            </ul>
+          </div>
+
+          <div class="panel reveal">
+            <h3 class="panel__title mono">Toolkit</h3>
+            <div class="skills">
+              <div><h4>Languages</h4><p>Python · Java · JavaScript · C# · C++ · HTML/CSS · React</p></div>
+              <div><h4>Backend &amp; Platforms</h4><p>Spring Boot · FastAPI · Flask · Django · ASP.NET Core · Next.js · Streamlit · Unity</p></div>
+              <div><h4>ML &amp; Data</h4><p>scikit-learn · XGBoost · Prophet · pandas · ensemble &amp; online learning · PostgreSQL · SQLite</p></div>
+              <div><h4>Networking</h4><p>CCNA: configuration, security &amp; troubleshooting</p></div>
+            </div>
+          </div>
+
+          <div class="panel panel--awards reveal">
+            <h3 class="panel__title mono">Certifications &amp; awards</h3>
+            <ul class="awards">
+              <li>
+                <span class="badge">CCNA</span>
+                <div><b>Cisco Certified Network Associate</b><span>Cisco · Credly verified · 2025</span></div>
+                <a class="card__link" data-link="credly" href="#" target="_blank" rel="noopener" aria-label="View CCNA badge on Credly">Verify <span class="arrow">↗</span></a>
+              </li>
+              <li>
+                <span class="badge">QS</span>
+                <div><b>QS ImpACT Skills Challenge Finalist</b><span>International recognition for SDG-focused 3D game · 2024</span></div>
+              </li>
+              <li>
+                <span class="badge">MS</span>
+                <div><b>Software Engineering Certificate</b><span>Moringa School · Full-Stack Web Development · 2024</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container">
+        <span class="eyebrow mono reveal">04 — Contact</span>
+        <h2 class="contact__title reveal">Let's build something<br /><em>that holds up.</em></h2>
+
+        <div class="contact__grid">
+          <div class="contact__links reveal">
+            <button class="email magnetic" id="copyEmail" data-email="nickmugo2@gmail.com" type="button">
+              <span class="email__addr">nickmugo2@gmail.com</span>
+              <span class="email__hint mono" id="copyHint">Click to copy</span>
+            </button>
+            <ul class="socials">
+              <li><a href="https://github.com/NICKMUGO" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a></li>
+              <li><a href="https://www.linkedin.com/in/nick-mugo-685154302/" target="_blank" rel="noopener">LinkedIn <span class="arrow">↗</span></a></li>
+              <li><a href="mailto:nickmugo2@gmail.com">Email <span class="arrow">↗</span></a></li>
+            </ul>
+            <p class="muted small">References from Safaricom and Strathmore University are available on request.</p>
+          </div>
+
+          <form class="form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hp"><label>Leave this empty <input name="bot-field" /></label></p>
+            <div class="field">
+              <input id="f-name" name="name" type="text" placeholder=" " required autocomplete="name" />
+              <label for="f-name">Your name</label>
+            </div>
+            <div class="field">
+              <input id="f-email" name="email" type="email" placeholder=" " required autocomplete="email" />
+              <label for="f-email">Email</label>
+            </div>
+            <div class="field">
+              <textarea id="f-msg" name="message" rows="4" placeholder=" " required></textarea>
+              <label for="f-msg">What are you working on?</label>
+            </div>
+            <button class="btn btn--primary magnetic" type="submit">Send message <span class="arrow">→</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="mono muted">© <span id="year">2026</span> Nick Mugo Njuru</span>
+      <span class="mono muted">Designed &amp; built in Nairobi</span>
+      <a href="#top" class="mono">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
