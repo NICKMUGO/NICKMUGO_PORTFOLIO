@@ -76,8 +76,8 @@
 
         <h1 class="hero__title" aria-label="Nick Mugo">
           <span class="line"><span class="word">Nick</span></span>
-          <span class="line line--indent"><span class="word"><em>Mugo</em></span><span class="hero__portrait" aria-hidden="true">
-            <img src="assets/profile.jpg" alt="" onerror="this.remove()" />
+          <span class="line line--indent"><span class="word"><em>Mugo</em></span><span class="hero__portrait">
+            <img src="assets/profile.jpg" alt="Portrait of Nick Mugo" width="480" height="600" fetchpriority="high" onerror="this.remove()" />
             <span class="monogram">NM</span>
           </span></span>
         </h1>
@@ -113,7 +113,7 @@
       <div class="marquee__track">
         <span>Java Spring Boot</span><i>✦</i><span>Python</span><i>✦</i><span>FastAPI</span><i>✦</i><span>Next.js</span><i>✦</i>
         <span>ASP.NET Core 8</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>scikit-learn</span><i>✦</i><span>XGBoost</span><i>✦</i>
-        <span>Prophet</span><i>✦</i><span>Unity &amp; C#</span><i>✦</i><span>React</span><i>✦</i><span>CCNA Networking</span><i>✦</i>
+        <span>Prophet</span><i>✦</i><span>Unity &amp; C#</span><i>✦</i><span>React</span><i>✦</i><span>Cisco Networking</span><i>✦</i><span>AWS Cloud</span><i>✦</i>
       </div>
     </div>
 
@@ -187,22 +187,29 @@
 
           <!-- Arcane Honor -->
           <article class="card card--c reveal spot">
-            <div class="card__visual viz-cube" aria-hidden="true">
-              <div class="scene">
-                <div class="cube">
-                  <span class="f f1"></span><span class="f f2"></span><span class="f f3"></span>
-                  <span class="f f4"></span><span class="f f5"></span><span class="f f6"></span>
-                </div>
-              </div>
+            <div class="card__visual gallery" data-gallery>
+              <img class="is-active" src="assets/arcane/co2-emissions.jpg" alt="Arcane Honor gameplay: a player walks toward a smoking factory chimney at sunset, illustrating CO2 emissions" loading="lazy" />
+              <img src="assets/arcane/poaching.jpg" alt="Arcane Honor gameplay: the player confronts poachers beside a fallen elephant, a scene on SDG 15, Life on Land" loading="lazy" />
+              <img src="assets/arcane/village.jpg" alt="Arcane Honor gameplay: a cutscene in a Kenyan village at dusk" loading="lazy" />
+              <img src="assets/arcane/tea-farming.jpg" alt="Arcane Honor gameplay: the player walks through tea and coffee farms while an info panel explains their role in Kenya's economy" loading="lazy" />
+              <img src="assets/arcane/team-misfits254.jpg" alt="Team Misfits254, the three developers of Arcane Honor, seated in armchairs" loading="lazy" />
+              <button class="play" type="button" data-video="pf8Wnz-63Xg" aria-label="Play the Arcane Honor film">
+                <span class="play__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+                <span class="play__text mono">Watch the film · 3 min</span>
+              </button>
+              <div class="gallery__dots" aria-hidden="true"><i class="is-active"></i><i></i><i></i><i></i><i></i></div>
               <span class="viz-label mono">QS ImpACT · Finalist</span>
             </div>
             <div class="card__body">
               <div class="card__meta mono"><span>Scrum Master &amp; Lead Developer</span><span>2024</span></div>
               <h3 class="card__title">Arcane Honor</h3>
               <p class="card__sub">3D game for the UN Sustainable Development Goals</p>
-              <p>Led Team Misfits254 to finalist selection before 50+ international judges, representing Kenya. Presented to Microsoft and Halo.</p>
+              <p>An open-world journey through Kenya's cultural traditions that puts real problems in front of the player: poaching (SDG 15), CO2 emissions, responsible consumption (SDG 12) and sustainable communities (SDG 11). I led Team Misfits254 to finalist selection before 50+ international judges, representing Kenya. Presented to Microsoft and Halo.</p>
               <div class="tags"><span>Unity</span><span>C#</span><span>3D</span><span>Scrum</span></div>
-              <a class="card__link" href="https://nickmugo.itch.io/misfitskenya" target="_blank" rel="noopener">Play on itch.io <span class="arrow">↗</span></a>
+              <div class="card__links">
+                <a class="card__link" href="https://www.youtube.com/watch?v=pf8Wnz-63Xg" target="_blank" rel="noopener">Watch on YouTube <span class="arrow">↗</span></a>
+                <a class="card__link" href="https://nickmugo.itch.io/misfitskenya" target="_blank" rel="noopener">Play on itch.io <span class="arrow">↗</span></a>
+              </div>
             </div>
           </article>
 
@@ -379,11 +386,18 @@
     <!-- ============ ABOUT ============ -->
     <section class="section" id="about">
       <div class="container about">
+        <div class="about__top">
         <div class="about__intro reveal">
           <span class="eyebrow mono">03 — About</span>
           <h2 class="section__title">Engineer by training,<br /><em>operator</em> by habit.</h2>
           <p class="lead">I'm a final-year Computer Science student at Strathmore University, specialising in Software Engineering. I like the unglamorous parts of software: production monitoring, incident response, legacy code that has to keep working while you rewrite it.</p>
           <p class="lead muted">I've been Scrum Master on four shipped team products. Outside the enterprise stack, I build ML systems that learn from feedback. I've also led a game team to an international final and taught networking to kids in a school computer lab.</p>
+          <p class="lead muted">Away from the keyboard, I run. Distance running teaches the same thing production systems do: pacing beats sprinting.</p>
+        </div>
+        <figure class="about__photo reveal">
+          <img src="assets/marathon.jpg" alt="Nick Mugo running in the Standard Chartered Marathon, wearing bib 40141" width="720" height="900" loading="lazy" />
+          <figcaption class="mono">Standard Chartered Marathon · Bib 40141</figcaption>
+        </figure>
         </div>
 
         <div class="about__grid">
@@ -404,7 +418,7 @@
               <div><h4>Languages</h4><p>Python · Java · JavaScript · C# · C++ · HTML/CSS · React</p></div>
               <div><h4>Backend &amp; Platforms</h4><p>Spring Boot · FastAPI · Flask · Django · ASP.NET Core · Next.js · Streamlit · Unity</p></div>
               <div><h4>ML &amp; Data</h4><p>scikit-learn · XGBoost · Prophet · pandas · ensemble &amp; online learning · PostgreSQL · SQLite</p></div>
-              <div><h4>Networking</h4><p>CCNA: configuration, security &amp; troubleshooting</p></div>
+              <div><h4>Networking, Cloud &amp; Security</h4><p>Cisco CCNA ENSA: OSPF, ACLs, NAT, WAN, SDN &amp; automation · AWS Cloud Foundations · IBM Cybersecurity Fundamentals</p></div>
             </div>
           </div>
 
@@ -412,17 +426,40 @@
             <h3 class="panel__title mono">Certifications &amp; awards</h3>
             <ul class="awards">
               <li>
-                <span class="badge">CCNA</span>
-                <div><b>Cisco Certified Network Associate</b><span>Cisco · Credly verified · 2025</span></div>
-                <a class="card__link" data-link="credly" href="#" target="_blank" rel="noopener" aria-label="View CCNA badge on Credly">Verify <span class="arrow">↗</span></a>
+                <img class="badge-img" src="assets/badges/ccna-ensa.png" alt="" width="64" height="64" loading="lazy" />
+                <div><b>CCNA: Enterprise Networking, Security &amp; Automation</b><span>Cisco Networking Academy · May 2025</span></div>
+                <div class="award__links">
+                  <a class="card__link" href="https://www.credly.com/badges/500809a7-5ec1-454a-a8ee-d87325d40092" target="_blank" rel="noopener">Verify on Credly <span class="arrow">↗</span></a>
+                  <a class="card__link" href="assets/certificates/cisco-ccna-ensa.pdf" target="_blank" rel="noopener">Certificate <span class="arrow">↗</span></a>
+                </div>
+              </li>
+              <li>
+                <img class="badge-img" src="assets/badges/aws-cloud-foundations.png" alt="" width="64" height="64" loading="lazy" />
+                <div><b>AWS Academy Graduate: Cloud Foundations</b><span>Amazon Web Services · Jul 2026</span></div>
+                <div class="award__links">
+                  <a class="card__link" href="https://www.credly.com/badges/7a221447-42a8-40cc-a43c-7e1dbb3ef61e" target="_blank" rel="noopener">Verify on Credly <span class="arrow">↗</span></a>
+                </div>
+              </li>
+              <li>
+                <img class="badge-img" src="assets/badges/ibm-cybersecurity.png" alt="" width="64" height="64" loading="lazy" />
+                <div><b>Cybersecurity Fundamentals</b><span>IBM · Oct 2024</span></div>
+                <div class="award__links">
+                  <a class="card__link" href="https://www.credly.com/badges/81e005f5-dcb7-4db3-a46a-d5631a393fc5" target="_blank" rel="noopener">Verify on Credly <span class="arrow">↗</span></a>
+                </div>
               </li>
               <li>
                 <span class="badge">QS</span>
-                <div><b>QS ImpACT Skills Challenge Finalist</b><span>International recognition for SDG-focused 3D game · 2024</span></div>
+                <div><b>QS ImpACT Skills Challenge Finalist</b><span>With the United Nations · International recognition for an SDG-focused 3D game · 2024</span></div>
+                <div class="award__links">
+                  <a class="card__link" href="https://www.youtube.com/watch?v=pf8Wnz-63Xg" target="_blank" rel="noopener">Watch the film <span class="arrow">↗</span></a>
+                </div>
               </li>
               <li>
                 <span class="badge">MS</span>
-                <div><b>Software Engineering Certificate</b><span>Moringa School · Full-Stack Web Development · 2024</span></div>
+                <div><b>Software Engineering Certificate</b><span>Moringa School · Full-stack: back-end &amp; front-end · Jun 2024</span></div>
+                <div class="award__links">
+                  <a class="card__link" href="assets/certificates/moringa-software-engineering.pdf" target="_blank" rel="noopener">Certificate <span class="arrow">↗</span></a>
+                </div>
               </li>
             </ul>
           </div>
@@ -472,6 +509,11 @@
       </div>
     </section>
   </main>
+
+  <dialog class="video-modal" id="videoModal" aria-label="Arcane Honor film">
+    <div class="video-modal__frame"></div>
+    <button class="video-modal__close" type="button" aria-label="Close video">✕</button>
+  </dialog>
 
   <footer class="footer">
     <div class="container footer__inner">

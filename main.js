@@ -2,9 +2,6 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const finePointer = window.matchMedia("(pointer: fine)").matches;
 
-  // Hide links that haven't been filled in yet (e.g. Credly badge)
-  document.querySelectorAll('a[href="#"]').forEach((a) => a.remove());
-
   // Year
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
@@ -117,6 +114,43 @@
       });
       el.addEventListener("pointerleave", () => (el.style.transform = ""));
     });
+  }
+
+  // Arcane Honor gallery: crossfade through gameplay stills
+  document.querySelectorAll("[data-gallery]").forEach((g) => {
+    const imgs = [...g.querySelectorAll("img")];
+    const dots = [...g.querySelectorAll(".gallery__dots i")];
+    if (imgs.length < 2 || reduceMotion) return;
+    let i = 0, timer = null;
+    const show = (n) => {
+      imgs[i].classList.remove("is-active"); dots[i] && dots[i].classList.remove("is-active");
+      i = n % imgs.length;
+      imgs[i].classList.add("is-active"); dots[i] && dots[i].classList.add("is-active");
+    };
+    const start = () => { if (!timer) timer = setInterval(() => show(i + 1), 3800); };
+    const stop = () => { clearInterval(timer); timer = null; };
+    new IntersectionObserver(([e]) => (e.isIntersecting ? start() : stop())).observe(g);
+  });
+
+  // Video modal (YouTube loads only when opened)
+  const modal = document.getElementById("videoModal");
+  if (modal && typeof modal.showModal === "function") {
+    const frame = modal.querySelector(".video-modal__frame");
+    const close = () => modal.close();
+    document.querySelectorAll("[data-video]").forEach((btn) =>
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.video;
+        frame.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1" title="Arcane Honor — Misfits254" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+        modal.showModal();
+      })
+    );
+    modal.querySelector(".video-modal__close").addEventListener("click", close);
+    modal.addEventListener("click", (e) => e.target === modal && close());
+    modal.addEventListener("close", () => (frame.innerHTML = ""));
+  } else {
+    document.querySelectorAll("[data-video]").forEach((btn) =>
+      btn.addEventListener("click", () => window.open(`https://www.youtube.com/watch?v=${btn.dataset.video}`, "_blank", "noopener"))
+    );
   }
 
   // Copy email
